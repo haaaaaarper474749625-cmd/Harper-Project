@@ -39,3 +39,7 @@ Open `http://localhost:3000`.
 4. Output setting: default Next.js output
 
 No environment variables are required for this first version.
+
+## Automatic deploys
+
+Pushes to the `main` branch trigger the GitHub Actions workflow in `.github/workflows/deploy-vercel.yml`, which rebuilds and deploys the site to Vercel automatically.
