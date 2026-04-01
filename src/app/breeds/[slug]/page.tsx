@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreedImage } from "@/components/breed-image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -91,7 +92,15 @@ export default async function BreedDetailPage({ params }: PageProps) {
         </div>
 
         <div className="bg-[linear-gradient(180deg,_#fbf4e8_0%,_#efdfc4_100%)] p-8 md:p-10">
-          <p className="text-sm uppercase tracking-[0.25em] text-stone-600">
+          <BreedImage
+            src={breed.imageSrc}
+            alt={breed.imageAlt}
+            priority
+            className="aspect-[4/3] w-full rounded-[1.5rem] border border-white/70 shadow-[0_16px_40px_rgba(73,52,33,0.10)]"
+            sizes="(max-width: 768px) 100vw, 42vw"
+          />
+
+          <p className="mt-6 text-sm uppercase tracking-[0.25em] text-stone-600">
             Temperament
           </p>
           <div className="mt-4 flex flex-wrap gap-2">
@@ -175,17 +184,25 @@ export default async function BreedDetailPage({ params }: PageProps) {
               <Link
                 key={item.slug}
                 href={`/breeds/${item.slug}`}
-                className="rounded-[1.5rem] border border-stone-200 bg-stone-50 p-6 transition hover:border-stone-300 hover:bg-white"
+                className="overflow-hidden rounded-[1.5rem] border border-stone-200 bg-stone-50 transition hover:border-stone-300 hover:bg-white"
               >
-                <p className="text-sm uppercase tracking-[0.2em] text-stone-500">
-                  {item.group}
-                </p>
-                <h3 className="mt-3 font-display text-3xl text-stone-950">
-                  {item.name}
-                </h3>
-                <p className="mt-4 text-sm leading-7 text-stone-700">
-                  {item.summary}
-                </p>
+                <BreedImage
+                  src={item.imageSrc}
+                  alt={item.imageAlt}
+                  className="aspect-[4/3] w-full"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="p-6">
+                  <p className="text-sm uppercase tracking-[0.2em] text-stone-500">
+                    {item.group}
+                  </p>
+                  <h3 className="mt-3 font-display text-3xl text-stone-950">
+                    {item.name}
+                  </h3>
+                  <p className="mt-4 text-sm leading-7 text-stone-700">
+                    {item.summary}
+                  </p>
+                </div>
               </Link>
             ))}
           </div>

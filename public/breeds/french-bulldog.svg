@@ -1,0 +1,15 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#EEE2DA"/>
+  <circle cx="1225" cy="235" r="180" fill="#A79388" fill-opacity="0.28"/>
+  <circle cx="310" cy="220" r="125" fill="#FCF3ED" fill-opacity="0.88"/>
+  <path d="M465 1025C530 862 652 726 808 726C964 726 1086 862 1150 1025H465Z" fill="#FDF7F3"/>
+  <path d="M635 522L697 312L792 514C735 574 666 590 635 522Z" fill="#8B7B73"/>
+  <path d="M981 522L919 312L824 514C881 574 950 590 981 522Z" fill="#8B7B73"/>
+  <ellipse cx="808" cy="626" rx="250" ry="232" fill="#8B7B73"/>
+  <ellipse cx="808" cy="676" rx="186" ry="164" fill="#F1E5DD"/>
+  <ellipse cx="714" cy="625" rx="30" ry="38" fill="#231C18"/>
+  <ellipse cx="902" cy="625" rx="30" ry="38" fill="#231C18"/>
+  <ellipse cx="808" cy="652" rx="62" ry="44" fill="#3A2C26"/>
+  <path d="M744 714C778 742 838 742 872 714" stroke="#6B493C" stroke-width="16" stroke-linecap="round"/>
+  <text x="800" y="1070" fill="#5D4840" font-family="Georgia, serif" font-size="72" text-anchor="middle">French Bulldog</text>
+</svg>

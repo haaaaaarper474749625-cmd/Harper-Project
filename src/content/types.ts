@@ -16,6 +16,8 @@ export type Breed = {
   countrySlug: string;
   countryName: string;
   countryNameZh: string;
+  imageSrc: string;
+  imageAlt: string;
   group: string;
   size: string;
   coat: string;

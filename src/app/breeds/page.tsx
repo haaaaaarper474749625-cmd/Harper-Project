@@ -1,3 +1,4 @@
+import { BreedImage } from "@/components/breed-image";
 import Link from "next/link";
 import { getAllBreeds } from "@/lib/content";
 
@@ -28,29 +29,37 @@ export default async function BreedsPage() {
           <Link
             key={breed.slug}
             href={`/breeds/${breed.slug}`}
-            className="rounded-[1.75rem] border border-stone-200 bg-white p-6 transition hover:-translate-y-1 hover:border-stone-300"
+            className="overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white transition hover:-translate-y-1 hover:border-stone-300"
           >
-            <p className="text-sm uppercase tracking-[0.2em] text-stone-500">
-              {breed.countryName}
-            </p>
-            <h2 className="mt-3 font-display text-3xl text-stone-950">
-              {breed.name}
-            </h2>
-            <p className="mt-2 text-sm text-stone-500">
-              {breed.group} / {breed.size}
-            </p>
-            <p className="mt-4 text-sm leading-7 text-stone-700">
-              {breed.summary}
-            </p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              {breed.bestFor.map((item) => (
-                <span
-                  key={item}
-                  className="rounded-full border border-stone-200 px-3 py-1 text-xs text-stone-700"
-                >
-                  {item}
-                </span>
-              ))}
+            <BreedImage
+              src={breed.imageSrc}
+              alt={breed.imageAlt}
+              className="aspect-[4/3] w-full"
+              sizes="(max-width: 1280px) 50vw, 33vw"
+            />
+            <div className="p-6">
+              <p className="text-sm uppercase tracking-[0.2em] text-stone-500">
+                {breed.countryName}
+              </p>
+              <h2 className="mt-3 font-display text-3xl text-stone-950">
+                {breed.name}
+              </h2>
+              <p className="mt-2 text-sm text-stone-500">
+                {breed.group} / {breed.size}
+              </p>
+              <p className="mt-4 text-sm leading-7 text-stone-700">
+                {breed.summary}
+              </p>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {breed.bestFor.map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-stone-200 px-3 py-1 text-xs text-stone-700"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
           </Link>
         ))}

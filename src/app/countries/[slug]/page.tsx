@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreedImage } from "@/components/breed-image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllCountries, getBreedBySlug, getCountryBySlug } from "@/lib/content";
@@ -105,26 +106,34 @@ export default async function CountryDetailPage({ params }: PageProps) {
             <Link
               key={breed.slug}
               href={`/breeds/${breed.slug}`}
-              className="rounded-[1.75rem] border border-stone-200 bg-white p-6 transition hover:border-stone-300 hover:bg-stone-50"
+              className="overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white transition hover:border-stone-300 hover:bg-stone-50"
             >
-              <p className="text-sm uppercase tracking-[0.2em] text-stone-500">
-                {breed.group}
-              </p>
-              <h3 className="mt-3 font-display text-3xl text-stone-950">
-                {breed.name}
-              </h3>
-              <p className="mt-4 text-sm leading-7 text-stone-700">
-                {breed.summary}
-              </p>
-              <div className="mt-5 flex flex-wrap gap-2">
-                {breed.temperament.map((trait) => (
-                  <span
-                    key={trait}
-                    className="rounded-full bg-stone-100 px-3 py-1 text-xs text-stone-700"
-                  >
-                    {trait}
-                  </span>
-                ))}
+              <BreedImage
+                src={breed.imageSrc}
+                alt={breed.imageAlt}
+                className="aspect-[4/3] w-full"
+                sizes="(max-width: 1280px) 50vw, 33vw"
+              />
+              <div className="p-6">
+                <p className="text-sm uppercase tracking-[0.2em] text-stone-500">
+                  {breed.group}
+                </p>
+                <h3 className="mt-3 font-display text-3xl text-stone-950">
+                  {breed.name}
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-stone-700">
+                  {breed.summary}
+                </p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {breed.temperament.map((trait) => (
+                    <span
+                      key={trait}
+                      className="rounded-full bg-stone-100 px-3 py-1 text-xs text-stone-700"
+                    >
+                      {trait}
+                    </span>
+                  ))}
+                </div>
               </div>
             </Link>
           ))}

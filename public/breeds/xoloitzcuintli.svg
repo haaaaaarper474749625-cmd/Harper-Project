@@ -1,0 +1,15 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#E9DDD4"/>
+  <circle cx="1215" cy="240" r="185" fill="#8F5A45" fill-opacity="0.26"/>
+  <circle cx="302" cy="220" r="124" fill="#F6EDE8" fill-opacity="0.88"/>
+  <path d="M440 1030C505 846 632 714 806 714C980 714 1105 846 1170 1030H440Z" fill="#F8F1EB"/>
+  <path d="M632 514L703 314L770 520C724 575 664 577 632 514Z" fill="#6E4B3D"/>
+  <path d="M980 514L909 314L842 520C888 575 948 577 980 514Z" fill="#6E4B3D"/>
+  <ellipse cx="806" cy="622" rx="258" ry="232" fill="#6E4B3D"/>
+  <ellipse cx="806" cy="672" rx="182" ry="158" fill="#B58A74"/>
+  <ellipse cx="712" cy="620" rx="29" ry="37" fill="#221916"/>
+  <ellipse cx="900" cy="620" rx="29" ry="37" fill="#221916"/>
+  <path d="M806 646L842 696H770L806 646Z" fill="#221916"/>
+  <path d="M746 714C778 744 834 744 866 714" stroke="#553B31" stroke-width="16" stroke-linecap="round"/>
+  <text x="800" y="1070" fill="#58443B" font-family="Georgia, serif" font-size="66" text-anchor="middle">Xoloitzcuintli</text>
+</svg>

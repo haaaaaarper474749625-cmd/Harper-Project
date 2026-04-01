@@ -1,0 +1,16 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#F6EADF"/>
+  <circle cx="1205" cy="235" r="180" fill="#D29A68" fill-opacity="0.22"/>
+  <circle cx="298" cy="220" r="122" fill="#FFF7F0" fill-opacity="0.88"/>
+  <path d="M460 1025C530 856 650 730 806 730C962 730 1080 856 1152 1025H460Z" fill="#FFF8F1"/>
+  <path d="M644 520L711 380L776 542C721 578 672 573 644 520Z" fill="#C88A57"/>
+  <path d="M968 520L901 380L836 542C891 578 940 573 968 520Z" fill="#C88A57"/>
+  <ellipse cx="806" cy="630" rx="270" ry="240" fill="#C88A57"/>
+  <ellipse cx="806" cy="654" rx="220" ry="196" fill="#E7B57F"/>
+  <ellipse cx="806" cy="684" rx="176" ry="160" fill="#F5E4D3"/>
+  <ellipse cx="716" cy="630" rx="29" ry="37" fill="#2A1E17"/>
+  <ellipse cx="896" cy="630" rx="29" ry="37" fill="#2A1E17"/>
+  <ellipse cx="806" cy="654" rx="58" ry="41" fill="#3A2A21"/>
+  <path d="M748 716C778 744 834 744 864 716" stroke="#7E4F3B" stroke-width="16" stroke-linecap="round"/>
+  <text x="800" y="1070" fill="#714635" font-family="Georgia, serif" font-size="78" text-anchor="middle">Pekingese</text>
+</svg>

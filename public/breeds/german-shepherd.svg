@@ -1,0 +1,16 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#E8DED1"/>
+  <circle cx="1220" cy="220" r="180" fill="#B98A55" fill-opacity="0.28"/>
+  <circle cx="290" cy="250" r="125" fill="#F4EEE5" fill-opacity="0.88"/>
+  <path d="M435 1030C495 842 627 712 808 712C989 712 1115 842 1180 1030H435Z" fill="#F7F1EA"/>
+  <path d="M620 530L685 312L780 503C732 569 660 591 620 530Z" fill="#2A2521"/>
+  <path d="M995 530L930 312L835 503C883 569 955 591 995 530Z" fill="#2A2521"/>
+  <ellipse cx="808" cy="624" rx="266" ry="234" fill="#B98A55"/>
+  <path d="M585 625C629 523 703 445 808 445C913 445 987 523 1031 625C953 676 879 700 808 700C737 700 663 676 585 625Z" fill="#2A2521"/>
+  <ellipse cx="808" cy="675" rx="180" ry="162" fill="#E7D5BF"/>
+  <ellipse cx="708" cy="625" rx="31" ry="39" fill="#1E1815"/>
+  <ellipse cx="908" cy="625" rx="31" ry="39" fill="#1E1815"/>
+  <path d="M808 646L846 697H770L808 646Z" fill="#1E1815"/>
+  <path d="M744 718C776 750 840 750 872 718" stroke="#6C4A3A" stroke-width="18" stroke-linecap="round"/>
+  <text x="800" y="1070" fill="#554339" font-family="Georgia, serif" font-size="72" text-anchor="middle">German Shepherd</text>
+</svg>
